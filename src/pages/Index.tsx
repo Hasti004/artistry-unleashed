@@ -19,28 +19,37 @@ const Index = () => {
 
         {/* Floating artwork frames */}
         <motion.div
-          className="absolute top-20 left-[5%] w-36 h-48 gallery-frame overflow-hidden floating-artwork opacity-80 hidden lg:block"
+          className="absolute top-20 left-[5%] w-36 h-48 gallery-frame overflow-hidden opacity-80 hidden lg:block cursor-grab active:cursor-grabbing z-20"
+          drag
+          dragMomentum={false}
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 0.8, y: 0 }}
           transition={{ delay: 0.8, duration: 1 }}
+          whileDrag={{ scale: 1.08, zIndex: 50 }}
         >
-          <img src={artwork1} alt="Seascape" className="w-full h-full object-cover" />
+          <img src={artwork1} alt="Seascape" className="w-full h-full object-cover pointer-events-none" />
         </motion.div>
 
         <motion.div
-          className="absolute bottom-32 right-[8%] w-44 h-36 gallery-frame overflow-hidden floating-artwork-delayed opacity-70 hidden lg:block"
+          className="absolute bottom-32 right-[8%] w-44 h-36 gallery-frame overflow-hidden opacity-70 hidden lg:block cursor-grab active:cursor-grabbing z-20"
+          drag
+          dragMomentum={false}
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 0.7, y: 0 }}
           transition={{ delay: 1.2, duration: 1 }}
+          whileDrag={{ scale: 1.08, zIndex: 50 }}
         >
-          <img src={artwork2} alt="Abstract" className="w-full h-full object-cover" />
+          <img src={artwork2} alt="Abstract" className="w-full h-full object-cover pointer-events-none" />
         </motion.div>
 
         <motion.div
-          className="absolute top-40 right-[15%] w-28 h-36 gallery-frame overflow-hidden floating-artwork-slow opacity-60 hidden lg:block"
+          className="absolute top-40 right-[15%] w-28 h-36 gallery-frame overflow-hidden opacity-60 hidden lg:block cursor-grab active:cursor-grabbing z-20"
+          drag
+          dragMomentum={false}
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 0.6, y: 0 }}
           transition={{ delay: 1.5, duration: 1 }}
+          whileDrag={{ scale: 1.08, zIndex: 50 }}
         >
           <img src={artwork4} alt="Geometric" className="w-full h-full object-cover" />
         </motion.div>
