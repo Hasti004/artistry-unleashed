@@ -57,7 +57,7 @@ const Works = () => {
 
         {/* Floating art pieces around the title */}
         <motion.div
-          className="absolute top-10 left-[5%] w-32 h-40 gallery-frame overflow-hidden floating-artwork opacity-70 hidden lg:block"
+          className="absolute top-10 left-[5%] w-32 h-40 gallery-frame overflow-hidden opacity-70 hidden lg:block"
           initial={{ opacity: 0, scale: 0.5, rotate: -15 }}
           animate={{ opacity: 0.7, scale: 1, rotate: -8 }}
           transition={{ delay: 0.5, duration: 1.2 }}
@@ -66,7 +66,7 @@ const Works = () => {
         </motion.div>
 
         <motion.div
-          className="absolute top-16 right-[8%] w-28 h-36 gallery-frame overflow-hidden floating-artwork-delayed opacity-60 hidden lg:block"
+          className="absolute top-16 right-[8%] w-28 h-36 gallery-frame overflow-hidden opacity-60 hidden lg:block"
           initial={{ opacity: 0, scale: 0.5, rotate: 20 }}
           animate={{ opacity: 0.6, scale: 1, rotate: 6 }}
           transition={{ delay: 0.8, duration: 1.2 }}
@@ -75,7 +75,7 @@ const Works = () => {
         </motion.div>
 
         <motion.div
-          className="absolute bottom-10 left-[15%] w-24 h-32 gallery-frame overflow-hidden floating-artwork-slow opacity-50 hidden lg:block"
+          className="absolute bottom-10 left-[15%] w-24 h-32 gallery-frame overflow-hidden opacity-50 hidden lg:block"
           initial={{ opacity: 0, scale: 0.5, rotate: 10 }}
           animate={{ opacity: 0.5, scale: 1, rotate: 4 }}
           transition={{ delay: 1, duration: 1.2 }}
@@ -84,7 +84,7 @@ const Works = () => {
         </motion.div>
 
         <motion.div
-          className="absolute bottom-0 right-[12%] w-36 h-28 gallery-frame overflow-hidden floating-artwork opacity-65 hidden lg:block"
+          className="absolute bottom-0 right-[12%] w-36 h-28 gallery-frame overflow-hidden opacity-65 hidden lg:block"
           initial={{ opacity: 0, scale: 0.5, rotate: -10 }}
           animate={{ opacity: 0.65, scale: 1, rotate: -3 }}
           transition={{ delay: 1.2, duration: 1.2 }}
@@ -130,14 +130,14 @@ const Works = () => {
                 <div className={`relative mt-8 md:mt-0 ${index % 2 === 0 ? 'md:pl-16' : 'md:col-start-1 md:row-start-1 md:pr-16'}`}>
                   <div className="flex gap-4 items-start">
                     <motion.div
-                      className="w-40 h-52 gallery-frame overflow-hidden floating-artwork"
+                      className="w-40 h-52 gallery-frame overflow-hidden"
                       whileHover={{ scale: 1.05, rotate: 0 }}
                       style={{ rotate: index % 2 === 0 ? -5 : 5 }}
                     >
                       <img src={item.artworks[0]} alt="" className="w-full h-full object-cover" />
                     </motion.div>
                     <motion.div
-                      className="w-36 h-44 gallery-frame overflow-hidden floating-artwork-delayed mt-8"
+                      className="w-36 h-44 gallery-frame overflow-hidden mt-8"
                       whileHover={{ scale: 1.05, rotate: 0 }}
                       style={{ rotate: index % 2 === 0 ? 3 : -3 }}
                     >

@@ -52,7 +52,7 @@ const About = () => {
               <img src={artistPortrait} alt="Arturo Morales" className="w-full h-auto" />
             </div>
             <motion.div
-              className="absolute -bottom-8 -left-8 w-32 h-40 gallery-frame overflow-hidden floating-artwork hidden md:block"
+              className="absolute -bottom-8 -left-8 w-32 h-40 gallery-frame overflow-hidden hidden md:block"
               initial={{ opacity: 0 }}
               animate={{ opacity: 0.8 }}
               transition={{ delay: 1 }}
